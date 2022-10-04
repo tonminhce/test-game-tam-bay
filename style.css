@@ -1,0 +1,74 @@
+body {
+  background: black;
+}
+@media all and (min-width: 1280px) {
+  body {
+    background: #e7e7e7;
+  }
+}
+.animate {
+  animation: jump 0.5s;
+}
+#canvas1 {
+  position: absolute;
+  border: 5px solid white;
+  width: 800px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+#doge {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 63%;
+  left: 35%;
+}
+#tree {
+  left: 100%;
+  top: 62%;
+  width: 50px;
+  height: 70px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  animation: block 2s infinite;
+}
+@keyframes jump {
+  0% {
+    top: 63%;
+  }
+  12.5% {
+    top: 60%;
+  }
+  25% {
+    top: 57%;
+  }
+  37.5% {
+    top: 54%;
+  }
+  50% {
+    top: 51%;
+  }
+  62.5% {
+    top: 48%;
+  }
+  75% {
+    top: 57%;
+  }
+  87.5% {
+    top: 60%;
+  }
+  100% {
+    top: 63%;
+  }
+}
+@keyframes block {
+  from {
+    left: 69.2%;
+  }
+  to {
+    left: 29.7%;
+  }
+}
